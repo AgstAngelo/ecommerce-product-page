@@ -1,2 +1,50 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+@import "./variables.css";
+
+body{
+  font-family: Kumbh Sans, Arial, sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.orange {
+  color: var(--primary);
+}
+
+.main-bl__img {
+  width: 100%;
+  min-width: 375px;
+}
+
+.section-bl__add-btn {
+  background-color: var(--primary);
+  color: white;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+span + span{
+  background-color: var(--secondary);
+  padding: .25rem;
+  font-size: .7rem;
+}
+
+span{
+  margin: .25rem;
+}
+
+h2, span{
+  font-weight: bold;
+}
