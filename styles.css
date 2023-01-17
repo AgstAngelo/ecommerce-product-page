@@ -1,50 +1,122 @@
 @import "./variables.css";
 
 body{
-  font-family: Kumbh Sans, Arial, sans-serif;
+  font-family: Kumbh Sans, sans;
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+.title{
+  color: var(--color-primary);
+  margin: 1.5em 1.5em .5em;
+  padding: auto 0;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.subtitle{
+  font-size: 1.75rem;
+  padding: .1em .5em;
+  margin: .25em;
+}
+.description{
+  color: var(--color-darker);
+  font-size: 1rem;
+  padding: .1em .75em;
+  margin: .5em;
+}
+
+:has(.main-bl__img){
+  padding: 0;
+}
+
+.main-bl__img {
+  width: 100%;
+  min-width: 350px;
+}
+
+span{
+  margin: .5rem;
+}
+
+h2,
+h6,
+span{
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  border-bottom: .25em solid var(--color-primary);
+}
+
+.separator{
+  border: .1em solid var(--color-medium);
+  margin: auto 1em 4em;
+}
+
+.profile-icon{
+  width: 1.5rem;
+}
+
+.cart-profile > *{
+  margin: .5rem;
+}
+
+aside{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside > *{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: .5em .75em;
+}
+
+.price{
+  font-size: 1.5rem;
+}
+
+.discount{
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: .25rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+
+.totalprice{
+  color: var(--color-medium);
+  font-weight: bold;
+  padding: 0 .5em;
+}
+
+.item-btn,
+.item-number{
+  background-color: var(--color-lighter);
+  border: none;
+}
+
+
+.addcart-btn {
+  width: 100%; 
+  background-color: var(--color-primary);
+  color: white;
+  margin: 1em;
+  padding: 1em 1em;
+  border: none;
+  border-radius: .5rem;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: .75rem;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
-}
-
-.orange {
-  color: var(--primary);
-}
-
-.main-bl__img {
-  width: 100%;
-  min-width: 375px;
-}
-
-.section-bl__add-btn {
-  background-color: var(--primary);
-  color: white;
-}
-
-p{
-  font-size: 1rem;
-}
-
-h2{
-  font-size: 2.5rem;
-}
-
-span + span{
-  background-color: var(--secondary);
-  padding: .25rem;
-  font-size: .7rem;
-}
-
-span{
-  margin: .25rem;
-}
-
-h2, span{
-  font-weight: bold;
 }
