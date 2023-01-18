@@ -11,27 +11,26 @@
   <link rel="stylesheet" href="./styles.css">
 
   <title>Frontend Mentor | E-commerce product page</title>
-
 </head>
-<body>
 
-    <header class="white">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img src="./images/logo.svg" alt="logo da loja">
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Collections</a>
-              </li>
-              <li class="nav-item">
+<body>
+  <header class="white">
+    <nav class="navbar navbar-expand-lg nav-bl">
+      <div class="container-fluid">
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.svg" alt="logo da loja">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Men</a>
             </li>
             <li class="nav-item">
@@ -54,50 +53,42 @@
   </header>
   <!-- <hr class="separator"> -->
   <main class="main-bl">
-    <section class="container">
-      <div class="row">
-        <div class="col">
-          <img src="./images/image-product-1.jpg" alt="imagem produto" class="main-bl__img">
+    <aside class="showcase-bl">
+      <img src="./images/image-product-1.jpg" alt="imagem produto" class="showcase-bl__img-1">
+    </aside>
+    <section class="info-bl">
+      <h6 class="title">
+        Sneaker Company
+      </h6>
+      <h2 class="subtitle">
+        Fall Limited Edition Sneakers
+      </h2>
+      <p class="description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="pricings-bl">
+        <div>
+          <span class="pricings-bl__price">$125.00</span>
+          <span class="pricings-bl__discount">50%</span>
         </div>
-        <div class="col">
-          <h6 class="title orange">
-            Sneaker Company
-          </h6>
-          <h2 class="subtitle">
-            Fall Limited Edition Sneakers
-          </h2>
-          <p class="description">
-            These low-profile sneakers are your perfect casual wear companion. Featuring a 
-            durable rubber outer sole, they’ll withstand everything the weather can offer.
-          </p>
-          <aside>
-            <div>
-              <span class="price">$125.00</span>
-              <span class="discount">50%</span>
-            </div>
-            <div class="totalprice"><s>$250.00</s></div>
-          </aside>
-          
-            <div>
-              <button class="item-btn">
-                <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
-              </button>
-              <span class="item-number">0</span>
-              <button class="item-btn">
-                <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
-              </button>  
-            </div>
-            <button type="button" class="addcart-btn">
-              <img src="./images/icon-cart.svg" alt="ícone carrinho">
-              Add to cart
-            </button>
-
-
-        </div>
+        <span class="pricings-bl__totalprice"><s>$250.00</s></span>
       </div>
+      <div class="itemcontrol-bl">
+        <button class="itemcontrol-bl__item-btn">
+          <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+        </button>
+        <span class="itemcontrol-bl__item-number">0</span>
+        <button class="itemcontrol-bl__item-btn">
+          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+        </button>  
+      </div>
+      <button type="button" class="addcart-btn">
+        <img src="./images/icon-cart.svg" alt="ícone carrinho">
+        Add to cart
+      </button>
     </section>
   </main>
-  
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -106,5 +97,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
