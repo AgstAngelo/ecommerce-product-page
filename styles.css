@@ -2,40 +2,41 @@
   font-family: Kumbh Sans, sans-serif;
 }
 
-.bgc-primary{
-  background-color: #FF7D1A;
-}
-
 .c-primary{
   color: #FF7D1A;
 }
 
-.bgc-secondary{
-  background-color: #FFEDE0;
+.bgc-primary{
+  background-color: #FF7D1A;
 }
 
 .c-secondary {
   color: #FFEDE0;
 }
 
-.darker{
-  color: #68707D;
+.bgc-secondary{
+  background-color: #FFEDE0;
 }
 
-.bgc-medium{
-  background-color: #B6BCC8;
+
+.darker{
+  color: #68707D;
 }
 
 .medium{
   color: #B6BCC8;
 }
 
-.bgc-lighter{
-  background-color: #F7F8FD;
+.bgc-medium{
+  background-color: #B6BCC8;
 }
 
 .lighter{
   color: #F7F8FD;
+}
+
+.bgc-lighter{
+  background-color: #F7F8FD;
 }
 
 .white{
@@ -46,10 +47,6 @@
   border: none;
 }
 
-.round{
-  border-radius: .5rem;
-}
-
 .title {
   font-size: .75rem;
   letter-spacing: 1.5px;
@@ -57,4 +54,26 @@
 
 .subtitle {
   font-size: 1.875rem;
+}
+
+.cart{
+  all: unset;
+}
+
+@media (min-width: 36rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header,
+  .section-bl,
+  footer {
+    margin: auto;
+    width: 80%;
+  }
+
+  .showcase {
+    border-radius: 1rem;
+  }
 }
