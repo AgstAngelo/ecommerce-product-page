@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
 
-  <title>Frontend Mentor | E-commerce product page</title>
-</head>
-
-<body>
-  <header class="white">
-    <nav class="navbar navbar-expand-lg nav-bl">
-      <div class="container-fluid">
-        <div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="d-flex">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img src="./images/icon-menu.svg" alt="menu icon" />
+            </button>
+            <a href="#">
+              <img src="./images/logo.svg" alt="store logo" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link darker" aria-current="page" href="#">Collections</a>
+              </li>
+              <li class="nav-item darker">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item darker">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item darker">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item darker">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="./images/icon-cart.svg" alt="cart icon" class="p-3" />
+            <img src="./images/image-avatar.png" alt="avatar image" width="22"/>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="my-1">
+          <div>
+            <img
+              class="img-fluid"
+              src="./images/image-product-1.jpg"
+              alt="imagem do produto"
+            />
+          </div>
+        </div>
+        <div class="row collapse">
+          <div class="col">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="image 1"/>
+          </div>
+          <div class="col">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="image 2"/>
+          </div>
+          <div class="col">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="image 3"/>
+          </div>
+          <div class="col">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="image 4"/>
+          </div>
+        </div>
+      </section>
+      <section class="px-3">
+        <h6 class="px-2 py-1 mt-3 text-uppercase c-primary fw-bold title">
+          Sneaker Company
+        </h6>
+        <h2 class="px-2 py-1 fw-bold subtitle">
+          Fall Limited Edition Sneakers
+        </h2>
+        <p class="px-1 darker">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="d-flex mt-2 mb-3 align-items-center">
+          <span class="px-2 fw-bold fs-1">$125.00</span>
+          <span class="px-2 ms-2 fw-bold c-primary bgc-secondary rounded">50%</span>
+          <span class="ms-auto px-2 pb-2 fw-bold medium"><s>$250.00</s></span>
+        </div>
+        <div class="d-flex align-items-center my-2 px-2 py-2 bgc-lighter round">
+          <button class="btn w-100">
+            <img src="./images/icon-minus.svg" alt="minus icon" />
           </button>
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.svg" alt="logo da loja">
-          </a>
+          <span class="fw-bold w-100 text-center">0</span>
+          <button class="btn w-100">
+            <img src="./images/icon-plus.svg" alt="plus icon" />
+          </button>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Collections</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Men</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Women</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="cart-profile d-flex justify-between">
-          <img src="./images/icon-cart.svg" alt="ícone do carrinho">
-          <img src="./images/image-avatar.png" alt="imagem perfil do usuário" class="profile-icon">
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- <hr class="separator"> -->
-  <main class="main-bl">
-    <aside class="showcase-bl">
-      <img src="./images/image-product-1.jpg" alt="imagem produto" class="showcase-bl__img-1">
-    </aside>
-    <section class="info-bl">
-      <h6 class="title">
-        Sneaker Company
-      </h6>
-      <h2 class="subtitle">
-        Fall Limited Edition Sneakers
-      </h2>
-      <p class="description">
-        These low-profile sneakers are your perfect casual wear companion. Featuring a 
-        durable rubber outer sole, they’ll withstand everything the weather can offer.
-      </p>
-      <div class="pricings-bl">
-        <div>
-          <span class="pricings-bl__price">$125.00</span>
-          <span class="pricings-bl__discount">50%</span>
-        </div>
-        <span class="pricings-bl__totalprice"><s>$250.00</s></span>
-      </div>
-      <div class="itemcontrol-bl">
-        <button class="itemcontrol-bl__item-btn">
-          <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+        <button class="btn w-100 my-1 p-3 fw-bold bgc-primary white round">
+          <img src="./images/icon-cart.svg" alt="cart icon" />
+          Add to cart
         </button>
-        <span class="itemcontrol-bl__item-number">0</span>
-        <button class="itemcontrol-bl__item-btn">
-          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
-        </button>  
-      </div>
-      <button type="button" class="addcart-btn">
-        <img src="./images/icon-cart.svg" alt="ícone carrinho">
-        Add to cart
-      </button>
-    </section>
-  </main>
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/AgstAngelo/ecommerce-product-page">Augusto Angelo Palasios</a>.
-    </div>
-  </footer>
+      </section>
+    </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="./script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
