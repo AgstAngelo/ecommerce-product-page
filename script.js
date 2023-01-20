@@ -2,6 +2,7 @@ const button = document.querySelector('#button');
 const cart = document.querySelector('#cart');
 
 let cartPopper = null;
+console.log(cart);
 
 button.addEventListener("click", (e) => {
   if(cart.hasAttribute('open-cart')){
