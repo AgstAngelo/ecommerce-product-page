@@ -67,12 +67,7 @@
 
 #cart {
   display: none;
-  background: #333;
-  color: white;
-  font-weight: bold;
-  padding: 4px 8px;
-  font-size: 13px;
-  border-radius: 4px;
+  
 }
 
 #cart[open-cart]{
@@ -138,5 +133,9 @@
     margin: 0 auto 0;
     border: 1px solid #B6BCC8;
     max-width: 60rem;
+  }
+
+  .collapse {
+    display: flex;
   }
 }
