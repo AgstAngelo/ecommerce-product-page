@@ -100,7 +100,6 @@
 @media (min-width: 62rem) {
   
   header,
-  .separator,
   .main-bl,
   footer {
     max-width: 70rem;
@@ -109,7 +108,12 @@
   .separator {
     display: block;
     border: 1px solid #B6BCC8;
-    width: 81.5%;
+    width: 100%;
     margin: 1rem auto 2rem;
+    max-width: 64rem;
+  }
+
+  .avatar {
+    width: 40px;
   }
 }
