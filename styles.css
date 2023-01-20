@@ -2,11 +2,11 @@
   font-family: Kumbh Sans, sans-serif;
 }
 
-.c-primary{
+.c-primary {
   color: #FF7D1A;
 }
 
-.bgc-primary{
+.bgc-primary {
   background-color: #FF7D1A;
 }
 
@@ -14,37 +14,42 @@
   color: #FFEDE0;
 }
 
-.bgc-secondary{
+.bgc-secondary {
   background-color: #FFEDE0;
 }
 
 
-.darker{
+.darker {
   color: #68707D;
 }
 
-.medium{
+.medium {
   color: #B6BCC8;
 }
 
-.bgc-medium{
+.bgc-medium {
   background-color: #B6BCC8;
 }
 
-.lighter{
+.lighter {
   color: #F7F8FD;
 }
 
-.bgc-lighter{
+.bgc-lighter {
   background-color: #F7F8FD;
 }
 
-.white{
+.white {
   color: white;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
+}
+
+.separator {
+  display: none;
+  color: 
 }
 
 .title {
@@ -53,7 +58,7 @@
 }
 
 .subtitle {
-  font-size: 1.875rem;
+  font-size: 2rem;
 }
 
 .cart-unset{
@@ -81,13 +86,57 @@
   }
 
   header,
-  .section-bl,
   footer {
     margin: auto;
-    width: 80%;
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+  .main-bl {
+    margin: auto;
+    width: 100%;
+    padding: 0 5rem;
   }
 
   .showcase {
     border-radius: 1rem;
+  }
+}
+
+@media (min-width: 48rem) {
+
+  header, footer {
+    padding: 0 5rem;
+  }
+
+  .main-bl {
+    padding: 0 8rem;
+  }
+  .navbar-nav > * {
+    padding: 0 .25rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .main-bl {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-bl {
+    padding: 3rem;
+  }
+  
+  header,
+  .main-bl,
+  footer {
+    max-width: 75rem;
+  }
+
+  .separator {
+    display: block;
+    margin: 0 auto 0;
+    border: 1px solid #B6BCC8;
+    max-width: 60rem;
   }
 }
