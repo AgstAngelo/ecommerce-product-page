@@ -1,11 +1,41 @@
-var docWidth = document.documentElement.offsetWidth;
+const button = document.querySelector('#button');
+const cart = document.querySelector('#cart');
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-      el.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)
-    }
+let cartPopper = null;
+
+button.addEventListener("click", (e) => {
+  if(cart.hasAttribute('open-cart')){
+    hidePopper();
   }
-);
+  else {
+    showPopper();
+  }
+});
+
+function showPopper () {
+  cart.setAttribute('open-cart', "");
+  let cartPopper = Popper.createPopper(button, cart, {
+    placement: "bottom",
+    modifiers: [
+      {
+        name: "offset",
+        options: {
+          offset: [0, 8]
+        }
+      },
+      {
+        options: {
+          rootBoundary: "viewport"
+        }
+      }
+    ]
+  });
+}
+
+function hidePopper () {
+  cart.removeAttribute('open-cart');
+  if(cartPopper) {
+    cartPopper.destroy();
+    cartPopper = null;
+  }
+}
