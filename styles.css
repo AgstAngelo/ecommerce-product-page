@@ -116,4 +116,16 @@
   .avatar {
     width: 40px;
   }
+
+  .img-set > div + div {
+    padding-left: 1.5rem;
+  }
+
+  .cart-items {
+    width: 40%;
+  }
+
+  .add-cart {
+    width: 60%;
+  }
 }
